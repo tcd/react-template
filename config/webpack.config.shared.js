@@ -52,6 +52,26 @@ const webpackConfig = {
                 enforce: "pre",
                 use: "source-map-loader",
             },
+            {
+                test: /\.s?css$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    // {
+                    //     // https://webpack.js.org/loaders/sass-loader/
+                    //     loader: "sass-loader",
+                    //     options: {
+                    //         sourceMap: true,
+                    //         // Prefer `dart-sass`
+                    //         implementation: require.resolve("sass"),
+                    //     },
+                    // },
+                ],
+            },
+            {
+                test: /\.(png|svg)/,
+                type: "asset/resource",
+            },
         ],
     },
 };

@@ -27,8 +27,8 @@
         "target": "es5",
         "baseUrl": "./",
         "paths": {
-            // "@app/*":            ["./src/ts/*"],
-            "@app/util":         ["./src/util/index.ts"],
+            "@app/util":     ["./src/util/index.ts"],
+            "@app/assets/*": ["./src/assets/*"],
         },
         "typeRoots": [
             "./node_modules/@types",

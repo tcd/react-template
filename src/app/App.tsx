@@ -1,16 +1,25 @@
 import type { CSSProperties } from "react"
+import logo from "@app/assets/logo.svg"
 
 export const App = (_props: unknown): JSX.Element => {
     return (
-        <div style={mainStyles}>
-            <header>
-                <h1>Welcome to React</h1>
-                <main>
-                    This is a React app!
-                </main>
+        <div className="app">
+            <header className="app-header">
+                <img src={logo} className="app-logo" alt="logo" />
+                <p>
+                    Edit <code>src/App.js</code> and save to reload.
+                </p>
+                <a
+                    className="app-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Learn React
+                </a>
             </header>
         </div>
-    )
+    );
 }
 
 // =============================================================================
