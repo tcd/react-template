@@ -1,0 +1,27 @@
+/**
+ * Install the following VSCode extensions:
+ *
+ * - Required:
+ *   - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+ *   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+ * - Recommended:
+ *   - [dark-plus-syntax](https://marketplace.visualstudio.com/items?itemName=dunstontc.dark-plus-syntax)
+ *   - [vscode-gitignore-syntax](https://marketplace.visualstudio.com/items?itemName=dunstontc.vscode-gitignore-syntax)
+ */
+{
+    "files.exclude": {
+        // Version Control
+        "**/.git": true,
+    },
+    "search.exclude": {
+        "**/package-lock.json": true,
+    },
+    "files.associations": {
+        ".eslintignore": "gitignore",
+    },
+    "eslint.format.enable": true,
+    "[javascript]":      { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+    "[typescript]":      { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+    "[javascriptreact]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+    "[typescriptreact]": { "editor.defaultFormatter": "dbaeumer.vscode-eslint" },
+}

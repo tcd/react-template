@@ -1,0 +1,29 @@
+{
+    "repo": {
+        "prefix": "repo",
+        "body": "[$CLIPBOARD](https://github.com/$CLIPBOARD)$0",
+        "description": "Link to a GitHub repository",
+    },
+    "link": {
+        "prefix": [
+            "link",
+            "link 0",
+        ],
+        "body": "[$1]($2)$0",
+        "description": "text then href",
+    },
+    "link - title first": {
+        "prefix": [
+            "link 1",
+        ],
+        "body": "[${1:$CLIPBOARD}]($2)$0",
+        "description": "text then href",
+    },
+    "link - [$2]($1)": {
+        "prefix": [
+            "link 2",
+        ],
+        "body": "[$2](${1:$CLIPBOARD})$0",
+        "description": "href then text",
+    },
+}
